@@ -9,7 +9,9 @@ const FichaIndividual = ({datos}) => {
         <div>{datos.description}</div>
         <div>{datos.category}</div>
         <div>{datos.rating.rate} ({datos.rating.count})</div>
-        <div><Imagen valor={datos}/></div>
+        <div>
+            <Imagen valor={datos} />
+        </div>
         
         <div>
             <button>Comprar</button>
