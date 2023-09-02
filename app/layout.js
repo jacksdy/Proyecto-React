@@ -21,4 +21,6 @@ export default function RootLayout({ children }) {
   )
 }
 
+
+
 /* EL MODULO FUE DEPRECADO */
