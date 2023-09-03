@@ -23,4 +23,4 @@ export default function RootLayout({ children }) {
 
 
 
-/* EL MODULO FUE DEPRECADO */
+/* EL MODULO FUE DEPRECADO por lo que te mencionan que ya esto estará incorporado en la versión 14*/
