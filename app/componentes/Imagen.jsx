@@ -9,11 +9,11 @@ const Imagen = ({valor}) => {
     return (
         <>
             <Image
-                loader = {cargador}
-                width={150}
-                height={200}
-                src = {valor.image}
-                alt = {valor.title}
+                loader  = {cargador}
+                width   = {150}
+                height  = {200}
+                src     = {valor.image}
+                alt     = {valor.title}
             />
         </>
     )
