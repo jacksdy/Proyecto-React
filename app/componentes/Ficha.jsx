@@ -5,7 +5,7 @@ import estilos from "./ficha.module.css"
 function Ficha({valor}) {
   return (
     <>
-    <div className={estilos.productos} >
+    <div className={estilos.producto} >
         
         <div className="nombre">{valor.title}</div>
         <div className="precio">{valor.price}</div>

@@ -12,8 +12,8 @@ const page= async ()=> {
     return (
         <> 
         <div className={estilos.productos}>
-            {datos.map((valor, indice)=>
-                <Ficha valor = {valor} key={indice} />
+            {datos.map((valor, indice) =>
+                <Ficha valor={valor} key={indice}/>
             )}
         </div>
         </>

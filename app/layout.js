@@ -1,10 +1,10 @@
 import Providers from "@/store/provider"
-/* import {Montserrat} from "@next/font/google" */
+import {Montserrat} from "next/font/google" 
 
-/* const fuente = Montserrat({
+const fuente = Montserrat({
   weight:'400',
   subsets: ['latin']
-}) */
+})
 
 export const metadata = {
   title: 'Next.js',
@@ -15,7 +15,8 @@ export default function RootLayout({ children }) {
  return (
     <html lang="es">
       <Providers>
-        <body /* className={fuente.className} */>{children}</body>
+        <body className={fuente.className} >
+          {children}</body>
       </Providers>
     </html>
   )
