@@ -6,7 +6,7 @@ const cargarDatos = () =>{
     .then(response => response.json())
 }
 
-export default async function page () {
+ const page = async() => {
     const datos = await cargarDatos()
     return (
         <> 
@@ -18,3 +18,6 @@ export default async function page () {
         </>
     )
 }
+
+export default page
+/* 25:52 */

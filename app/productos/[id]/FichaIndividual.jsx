@@ -1,11 +1,10 @@
 'use client'
-import Imagen from "@/app/componentes/Imagen"
 
+import Imagen from "@/app/componentes/Imagen"
 const FichaIndividual = ({datos}) => {
   return (
     <>
     <div>
-
       <div>{datos.title}</div>
       <div>{datos.price}$</div>
       <div>{datos.description}</div>
@@ -16,8 +15,7 @@ const FichaIndividual = ({datos}) => {
       </div>
       <div>
           <button> Comprar </button>
-      </div>   
-
+      </div> 
     </div>
     </>
   )
