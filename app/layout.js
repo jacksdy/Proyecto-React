@@ -1,6 +1,7 @@
 import Providers from "@/store/provider"
 import {Montserrat} from "next/font/google" 
 import Carrito from "./carrito/Carrito"
+import estilos from "./layout.module.css"
 import Tipo from "./tipo/Tipo"
 
 const fuente = Montserrat({
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
       <Providers>
         <body className={fuente.className} >
           <Carrito />
-          <div>{children}</div>
+          <div className={estilos.container}>{children}</div>
         </body>
       </Providers>
     </html>

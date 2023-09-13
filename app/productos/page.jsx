@@ -16,7 +16,9 @@ const cargarDatos = () =>{
                 <Ficha valor={valor} key={indice}/>
             )}
         </div>
-        <Link href="/productos"><button>Volver</button></Link>
+        <div>
+            <Link href="/productos"><button>Volver</button></Link>
+        </div>
         </>
     )
 }
