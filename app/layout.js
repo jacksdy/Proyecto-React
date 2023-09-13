@@ -2,7 +2,7 @@ import Providers from "@/store/provider"
 import {Montserrat} from "next/font/google" 
 import Carrito from "./carrito/Carrito"
 import estilos from "./layout.module.css"
-import Tipo from "./tipo/Tipo"
+import Tipo from "./tipo/page"
 
 const fuente = Montserrat({
   weight:'400',
