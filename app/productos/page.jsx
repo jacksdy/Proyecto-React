@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Ficha from "../componentes/Ficha"
 import estilos from "./productos.module.css"
 
@@ -15,6 +16,7 @@ const cargarDatos = () =>{
                 <Ficha valor={valor} key={indice}/>
             )}
         </div>
+        <Link href="/productos"><button>Volver</button></Link>
         </>
     )
 }

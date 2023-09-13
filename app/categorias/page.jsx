@@ -1,7 +1,7 @@
 const page=()=> {
     return (
         <> 
-        
+        <p>Categorías</p>
         </>
     )
 }

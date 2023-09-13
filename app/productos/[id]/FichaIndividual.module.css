@@ -1,0 +1,18 @@
+.cajita{
+    background-color: white;
+    padding: 40px;
+    display: flex;
+
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15 );
+    transform: scale(0);
+    animation: scale 0.3s ease forwards;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

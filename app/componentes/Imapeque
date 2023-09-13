@@ -1,0 +1,21 @@
+'use client'
+import Image from "next/image"
+
+const cargador = ({src, width}) => {
+    return `${src}?w=${width}`
+}
+
+const Imapeque = ({valor}) => {
+    return (
+        <>
+            <Image
+                loader  = {cargador}
+                width   = {30}
+                height  = {50}
+                src     = {valor.image}
+                alt     = {valor.title}
+            />
+        </>
+    )
+}
+export default Imapeque
