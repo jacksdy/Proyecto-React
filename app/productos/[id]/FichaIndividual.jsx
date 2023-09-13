@@ -21,23 +21,29 @@ const FichaIndividual = ({datos}) => {
     <>
     <div className={estilos.cajita}>
       <div>
-          <Imagen valor={datos}/>
+        <Imagen valor={datos}/>
       </div>
-      <div><h2>{datos.title}</h2></div>
       <div>
-        <div><h3>{datos.price}$</h3></div>
-        <div>{datos.description}</div>
-        <div>{datos.category}</div>
-        <div>Rating: {datos.rating.rate} | Count: ({datos.rating.count})</div>
-      </div>
-      <div className={estilos.buttons}>
-          <button className={estilos.btn}
-            onClick = { () => adquirir (datos)} > 
-              Comprar 
-          </button>
-       
-          <Link href="/productos"><button className={estilos.btn}>Volver</button></Link>
-      </div>  
+        <div>
+            
+            <h2>{datos.title}</h2>
+        </div>
+        
+        <div>
+          <div><h3>{datos.price}$</h3></div>
+          <div>{datos.description}</div>
+          <div>{datos.category}</div>
+          <div>Rating: {datos.rating.rate} | Count: ({datos.rating.count})</div>
+        </div>
+        <div className={estilos.buttons}>
+            <button className={estilos.btn}
+              onClick = { () => adquirir (datos)} > 
+                Comprar 
+            </button>
+        
+            <Link href="/productos"><button className={estilos.btn}>Volver</button></Link>
+        </div>  
+    </div>
     </div>
     </>
   )

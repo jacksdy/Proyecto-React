@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image"
+import estilos from "./ficha.module.css"
 
 const cargador = ({src, width}) => {
     return `${src}?w=${width}`

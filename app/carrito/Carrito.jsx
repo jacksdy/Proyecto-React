@@ -13,8 +13,8 @@ const Carrito = () => {
     
     const calculoTotal = useMemo ( () => setTotal(carrito.reduce((acumulador, valorActual) => 
         acumulador + valorActual.precio, 0)), [carrito])
-        const eliminar = () => {
-            dispatch  (devolver (producto))
+        const eliminar = (producto) => {
+            dispatch(devolver (producto))
         }
     return (
         <> 
