@@ -2,7 +2,7 @@ import Providers from "@/store/provider"
 import {Montserrat} from "next/font/google" 
 import Carrito from "./carrito/Carrito"
 import estilos from "./layout.module.css"
-import Tipo from "./tipo/page"
+
 
 const fuente = Montserrat({
   weight:'400',
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <Providers>
         <body className={fuente.className} >
-          <Carrito />
+          <Carrito className={estilos.miCajita}/>
           <div className={estilos.container}>{children}</div>
         </body>
       </Providers>

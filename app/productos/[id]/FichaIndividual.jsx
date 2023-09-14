@@ -40,8 +40,10 @@ const FichaIndividual = ({datos}) => {
               onClick = { () => adquirir (datos)} > 
                 Comprar 
             </button>
-        
-            <Link href="/productos"><button className={estilos.btn}>Volver</button></Link>
+            <Link href="/productos">
+              <button className={estilos.btn}>
+                Volver</button>
+            </Link>
         </div>  
     </div>
     </div>

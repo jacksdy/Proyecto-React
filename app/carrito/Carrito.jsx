@@ -18,7 +18,7 @@ const Carrito = () => {
         }
     return (
         <> 
-        <div>{total}</div>
+        <div><b>Total:</b> {total}$ | <b>Cantidad: </b>{carrito.length}</div>
         <div className={estilos.miCarrito}>
             {carrito.length > 0
             ?
