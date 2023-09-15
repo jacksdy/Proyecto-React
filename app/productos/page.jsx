@@ -11,6 +11,7 @@ const cargarDatos = () =>{
     const datos = await cargarDatos()
     return (
         <> 
+        <h1>Productos</h1>
         <div className={estilos.productos}>
             {datos.map((valor, indice) =>
                 <Ficha valor={valor} key={indice}/>

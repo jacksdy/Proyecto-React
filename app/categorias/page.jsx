@@ -17,6 +17,7 @@ const page= async() => {
     )  
     return (
         <> 
+        <h1>Categorías</h1>
         <div className={estilos.columnas}>
             {categorias.map((valor, indice) =>
             <div className={`${estilos.columna} ${estilos.categoria}`} key = {indice}>

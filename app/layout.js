@@ -2,6 +2,7 @@ import Providers from "@/store/provider"
 import {Montserrat} from "next/font/google" 
 import Carrito from "./carrito/Carrito"
 import estilos from "./layout.module.css"
+import Menu from "./componentes/menu/Menu"
 
 
 const fuente = Montserrat({
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <Providers>
         <body className={fuente.className} >
+          <Menu />
           <Carrito className={estilos.miCajita}/>
           <div className={estilos.container}>{children}</div>
         </body>
