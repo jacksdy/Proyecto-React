@@ -19,28 +19,26 @@ const Carrito = () => {
         }
     return (
         <> 
-        <div className={estilos.barraTotal}>
-            <b>Total:</b> {total}$<b> | Cantidad: </b>{carrito.length}</div>
+{/*         <div className={estilos.barraTotal}>
+            <b>Total:</b> {total}$<b> | Cantidad: </b>{carrito.length}
+        </div> */}
         
         <div className={estilos.miCarrito}>
+            <div className={estilos.barraTotal}>
+                <b>Total:</b> {total}$<b> | Cantidad: </b>{carrito.length}
+            </div>
             {carrito.length > 0
             ?
             (carrito.map((valor, indice) =>
                 <div key = {indice}>
-                 {/* <Imapeque valor = {valor}/> */}
                     <img
                         onClick = {() => eliminar(valor.producto)}
                         src     = {valor.imagen}
                         alt     = {valor.title}
                         height  = "50"
                     />
-{/*                 <Image className={estilos.imagen}
-                src={valor.imagen}
-                alt={valor.title}
-                width={50}
-                height={50}
-                /> */}
-
+                    - Costo : {valor.precio}
+                
                 </div>
             ))
             :
