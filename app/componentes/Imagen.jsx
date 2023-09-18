@@ -12,7 +12,7 @@ const Imagen = ({valor}) => {
             <Image
                 loader  = {cargador}
                 width   = {150}
-                height  = {200}
+                height  = {150}
                 src     = {valor.image}
                 alt     = {valor.title}
             />

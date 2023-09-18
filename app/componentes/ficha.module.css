@@ -8,3 +8,14 @@
     align-items: center;
     justify-content: center;
 }
+.nombre{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    height: 41px;
+}
+
+.precio{
+    margin-top: 10px;
+}
