@@ -1,38 +1,29 @@
-.barraTotal{
+.barraTotal {
     display: flex;
     flex-direction: row;
     background-color: #323232;
     color: white;
     padding: 10px;
     gap: 20px;
-    font-size: 10px; 
-
+    font-size: 10px;
 }
 
-.miCarrito{
+.miCarrito {
     display: flex;
     flex-direction: column;
     gap: 20px;
-/*     align-items: center; */
     border: 1px dotted black;
     padding: 25px;
     border-radius: 6px;
     box-sizing: border-box;
-    
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     width: 300px;
     height: 80vh;
     position: fixed;
     right: 0;
-    top:20;
+    top: 20;
     background-color: white;
     overflow: auto;
-    font-size: 12px; 
-
-    
-}
-.imagen{
-
-    width: 50px;
-    height: 50px;
+    font-size: 12px;
 }
